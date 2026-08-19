@@ -317,17 +317,72 @@ Ba bản dùng chung đúng một câu hỏi này và đúng một câu trả l�
 
 ## Phần 1. Chốt bối cảnh và nhiệm vụ
 
-### 1.1. Câu hỏi để biết người tham gia có bối cảnh liên quan hay không
+### 1.1. Bảng câu hỏi phỏng vấn
 
-Nhóm chỉ hỏi đúng một câu ở đầu buổi và không để câu này chiếm quá hai phút. Câu hỏi hướng vào một chuyện đã xảy ra, không hướng vào thói quen chung, vì hỏi về thói quen thì người trả lời chỉ nói đại khái.
+# Kịch bản dẫn buổi thử: bảng câu hỏi theo thứ tự
 
-Câu hỏi chính như sau: trong bảy ngày gần đây, bạn có lần nào hỏi một công cụ AI về nội dung bài học rồi không biết câu trả lời đó có đúng hay không, không?
+Bảng này dành cho người dẫn cầm theo trong lúc thử. Cột thứ ba là lời để đọc gần như nguyên văn. Cột thứ tư nói rõ mục đích và những chỗ cần cẩn thận.
 
-Nếu người tham gia trả lời là có, người dẫn hỏi thêm đúng một câu để neo lại sự việc. Câu đó như sau: lần gần nhất là chuyện gì vậy, và sau đó bạn làm gì? Người ghi chép lại phần này càng sát nguyên văn càng tốt, vì về sau nhóm sẽ đối chiếu nó với hành vi của chính người đó trong lúc thử.
+## a. Mở đầu và xin phép
 
-Nếu người tham gia trả lời là chưa từng, nhóm vẫn tiến hành buổi thử. Nhưng nhóm phải ghi rõ trong biên bản rằng người này không có bối cảnh liên quan. Với những người như vậy, nhóm chỉ dùng dữ liệu để tìm chỗ giao diện gây khó hiểu. Nhóm không dùng dữ liệu đó để kết luận rằng phương án nào có giá trị.
+| Thứ tự | Nói lúc nào | Người dẫn nói gì | Mục đích và lưu ý |
+|---|---|---|---|
+| 1 | Ngay khi bắt đầu | Chào bạn. Nhóm mình đang làm một bài tập về thiết kế sản phẩm. Hôm nay mình muốn nhờ bạn thử ba bản nháp và nói to suy nghĩ của bạn trong lúc thử. | Người dẫn không nói đây là sản phẩm của nhóm và cũng không nói bản nào do nhóm tâm đắc, để người tham gia không khen cho vừa lòng. |
+| 2 | Ngay sau câu 1 | Ba bản này còn rất thô, vẽ tay và chưa chạy thật. Bạn cứ chê thoải mái, chê càng thẳng thì càng giúp được nhóm mình. | Câu này hạ kỳ vọng về hình thức, để người tham gia tập trung vào cách hoạt động thay vì bình luận màu sắc và bố cục. |
+| 3 | Trước khi bấm gì | Mình xin phép ghi màn hình và ghi âm buổi này được không. Bản ghi chỉ dùng trong nội bộ bài tập của nhóm mình thôi. | Người dẫn phải chờ người tham gia đồng ý rõ ràng rồi mới bật ghi. |
 
-Câu hỏi này không nhắc gì tới việc kiểm chứng, không nhắc tới coach, và cũng không nhắc tới ba bản sắp thử. Nếu người dẫn nói trước những thứ đó thì người tham gia sẽ tự tìm cách trả lời cho khớp với điều mà nhóm đang mong đợi.
+## b. Hỏi về bối cảnh, tối đa hai phút
+
+| Thứ tự | Nói lúc nào | Người dẫn nói gì | Mục đích và lưu ý |
+|---|---|---|---|
+| 4 | Trước khi mở bản nháp | Trong bảy ngày gần đây, bạn có lần nào hỏi một công cụ AI về nội dung bài học rồi không biết câu trả lời đó có đúng hay không, không? | Đây là câu sàng lọc duy nhất. Câu này hỏi về chuyện đã xảy ra, không hỏi thói quen chung. |
+| 5 | Chỉ hỏi khi câu 4 được trả lời là có | Lần gần nhất là chuyện gì vậy, và sau đó bạn làm gì? | Người ghi chép lại càng sát nguyên văn càng tốt. Về sau nhóm đối chiếu lời kể này với hành vi của chính họ trong lúc thử. |
+| 6 | Chỉ hỏi khi câu 4 được trả lời là chưa từng | Không sao cả, mình vẫn thử tiếp nhé. | Người dẫn không hỏi thêm và không cố khơi ra một câu chuyện. Người ghi đánh dấu người này không có bối cảnh liên quan. |
+
+## c. Giao nhiệm vụ, đọc nguyên văn cho cả ba bản
+
+| Thứ tự | Nói lúc nào | Người dẫn nói gì | Mục đích và lưu ý |
+|---|---|---|---|
+| 7 | Trước bản đầu tiên | Bạn đang học slide 4 và đang chuẩn bị bài cho nhóm mình. Bạn có một câu hỏi, và bạn cần biết câu trả lời có dùng được hay không trước khi mang vào bài nhóm. Trong tình huống này, bạn hãy dùng bản này để đi tới chỗ mà bạn thấy đủ chắc để học tiếp. Nếu bạn thấy mình không thể chắc thêm được nữa thì bạn cứ dừng lại, như vậy cũng được. | Vế cuối là phần bắt buộc phải đọc. Nếu bỏ vế này thì người tham gia sẽ cố bấm cho ra kết quả để làm vừa lòng người dẫn. |
+| 8 | Trước bản thứ hai và bản thứ ba | Giờ mình chuyển sang bản tiếp theo nhé. Nhiệm vụ vẫn y như lúc nãy. | Người dẫn không đổi một chữ nào trong nhiệm vụ và không mô tả bản mới có gì khác. |
+
+## d. Trong lúc người tham gia đang thử
+
+Ba câu đầu là câu cứu hộ, dùng đi dùng lại được cho cả ba bản. Các câu còn lại chỉ dùng khi đúng tình huống xảy ra.
+
+| Thứ tự | Nói lúc nào | Người dẫn nói gì | Mục đích và lưu ý |
+|---|---|---|---|
+| 9 | Khi người tham gia im lặng và có vẻ lúng túng | Bạn cứ nói to suy nghĩ của mình nhé. | Người dẫn phải đếm thầm tới mười trước khi nói câu này. Im lặng không phải lúc nào cũng là lúng túng. |
+| 10 | Khi người tham gia dừng lại và chờ hướng dẫn | Bạn sẽ làm gì tiếp theo? | Người dẫn đẩy quyền quyết định về lại cho người tham gia thay vì gợi ý. |
+| 11 | Khi người tham gia hỏi hệ thống hoạt động ra sao | Theo bạn, nó nên hoạt động như thế nào? | Người dẫn không xác nhận và không phủ nhận. Câu trả lời của họ chính là dữ liệu về mô hình mà họ đang hình dung trong đầu. |
+| 12 | Khi người tham gia khen bản nháp hoặc khen ý tưởng | Bản này còn thô lắm. Mà lúc nãy bạn bấm vào chỗ đó vì nghĩ nó sẽ ra cái gì vậy? | Người dẫn gạt lời khen sang một bên rồi kéo ngay về việc vừa xảy ra. |
+| 13 | Khi người tham gia đề xuất thêm tính năng | Nếu có cái đó thì nó giúp bạn ở đúng chỗ nào trong lúc nãy? | Người dẫn không bàn về tính năng, mà đào ngược về công việc mà người tham gia đang mắc. |
+| 14 | Ở bản A, khi họ mở chỗ dẫn rồi đóng rất nhanh | Lúc nãy bạn mở chỗ dẫn rồi đóng ngay, lúc đó bạn đang tìm cái gì vậy? | Câu này phân biệt việc đọc thật với việc mở ra cho có. |
+| 15 | Ở bản A, sau khi họ chọn vẫn tin hoặc bỏ qua ở ý thứ ba | Lúc nãy bạn chọn như vậy. Bạn dựa vào cái gì để chọn? | Đây là chỗ quan trọng nhất của bản A, vì ý thứ ba không có gì trong bài chống lưng. |
+| 16 | Ở bản B, sau khi họ bấm gửi hoặc bấm thôi | Bạn nghĩ gì ngay trước lúc bấm nút đó? | Câu này hỏi về khoảnh khắc vừa xảy ra, không hỏi về ý định chung chung. |
+| 17 | Ở bản B, trong lúc chờ coach trả lời | Bây giờ bạn định làm gì? | Người dẫn không gợi ý là hãy học tiếp. Việc họ chờ, học tiếp, hay mở công cụ khác đều là dữ liệu. |
+| 18 | Ở bản B, sau khi đọc câu trả lời của coach | Câu này với câu lúc nãy của trợ giảng, bạn thấy khác nhau ở chỗ nào? | Câu này kiểm tra xem người thật có mang lại thứ gì mà máy không mang lại được hay không. |
+| 19 | Ở bản C, ngay sau khi trợ giảng tự mở lên | Trên màn hình này bạn có để ý dòng nào không, và dòng đó nói gì? | Người dẫn tuyệt đối không chỉ vào dòng ghi coach đã duyệt. Việc họ có tự nhận ra hay không chính là thứ cần đo. |
+| 20 | Ở bản C, khi họ gặp câu chưa ai duyệt | Bây giờ bạn định làm gì? | Đây là chỗ yếu nhất của bản C, khi kho chưa có câu cho trường hợp riêng. |
+
+## e. Kết thúc buổi
+
+| Thứ tự | Nói lúc nào | Người dẫn nói gì | Mục đích và lưu ý |
+|---|---|---|---|
+| 21 | Sau khi thử xong cả ba bản | Nếu tuần sau bạn học một bài khó và chỉ được dùng một trong ba bản vừa rồi, bạn chọn bản nào? | Câu này hỏi về một chuyện chưa xảy ra, nhưng vẫn dùng được vì người tham gia đang chọn giữa ba thứ họ vừa tự tay bấm thử. |
+| 22 | Ngay sau câu 21 | Cái gì trong lúc bạn vừa thử đã làm bạn chọn như vậy, và bạn phải chịu thiệt gì khi chọn bản đó? | Đây mới là câu quan trọng. Nếu người tham gia không nói ra được cái giá phải trả thì lựa chọn ở câu 21 chỉ được ghi như một lời khen, không tính là dữ liệu. |
+| 23 | Khi họ đã trả lời xong câu 22 | Có chỗ nào trong ba bản vừa rồi làm bạn thấy khó chịu mà nãy giờ bạn chưa nói ra không? | Câu này mở đường cho những điều họ giữ lại vì ngại. Người dẫn hỏi xong thì im lặng chờ. |
+| 24 | Đóng buổi | Cảm ơn bạn nhiều. Nhóm mình dùng đúng những gì bạn vừa làm để sửa lại bản nháp. | Người dẫn không giải thích bản nào nhóm định chọn và không hỏi thêm gì sau câu này. |
+
+## f. Năm câu tuyệt đối không được hỏi
+
+| Câu không được hỏi | Vì sao hỏng | Câu dùng thay |
+|---|---|---|
+| Bạn thấy bản này có hay không | Câu này chỉ thu về ý kiến nói cho lịch sự | Xem câu số 14 |
+| Bạn có tin câu trả lời của AI không | Câu này hỏi về thái độ chung chung, ai cũng trả lời được mà không nói lên điều gì | Xem câu số 15 |
+| Nếu có nút gửi cho coach thì bạn có dùng không | Câu này hỏi về một chuyện chưa xảy ra nên câu trả lời gần như luôn là có | Xem câu số 16 |
+| Việc ghi rõ coach đã duyệt có làm bạn yên tâm hơn không | Câu này mớm sẵn kết luận mà nhóm đang mong đợi | Xem câu số 19 |
+| Bản nào tốt nhất | Câu này ép người tham gia xếp hạng thay vì nói ra tiêu chí của họ | Xem câu số 21 và 22 | 
 
 ### 1.2. Nhiệm vụ giao cho người tham gia
 
