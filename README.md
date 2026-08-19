@@ -476,39 +476,45 @@ Nhóm biết rằng câu thứ nhất là một câu hỏi về tương lai, t�
 | Việc ghi rõ coach đã duyệt có làm bạn yên tâm hơn không | Câu này mớm sẵn kết luận mà nhóm đang mong đợi | Trên màn hình đó bạn có để ý dòng nào không, và dòng đó nói gì |
 | Bản nào tốt nhất | Câu này ép người tham gia xếp hạng thay vì nói ra tiêu chí của họ | Bạn chọn bản nào, và cái gì trong lúc vừa thử làm bạn chọn như vậy |
 
-## Phần 3. Phân công và cách ghi chép
-
 # Phần 3 — Bảng ghi chép chung của nhóm
 
 Ba thành viên, ba tester, mỗi người phụ trách một buổi. Bảng dưới đây gộp cả ba buổi vào một bảng chung, mỗi bản A, B, C tách thành ba dòng nhỏ theo từng tester để không trộn dữ liệu của người này vào người kia.
 
 Người dẫn buổi 1 là Nguyễn Hoàng Minh, tester là một learner từng dùng AI hỏi bài học và dùng ChatGPT nhiều nhất.
-Người dẫn buổi 2 là Nguyễn Việt Hải, tester chưa có ghi chép chi tiết tại thời điểm này.
-Người dẫn buổi 3 là Trịnh Hải Đăng, tester là một học viên. Buổi này chạy theo hình thức người dẫn giới thiệu cơ chế trước khi hỏi, khác với luật không thuyết minh nhóm đã chốt, nên nhiều ô không quan sát được từ hành vi tự thao tác.
+Người dẫn buổi 2 là Nguyễn Việt Hải, tester là Nguyễn Thị Thương, phòng D304.
+Người dẫn buổi 3 là Trịnh Hải Đăng, tester là một học viên.
+
+## Cảnh báo quan trọng trước khi đọc bảng
+
+Buổi 3 do Đăng dẫn không theo đúng luật đã chốt ở Chặng 5. Đăng chủ động giải thích cơ chế cả ba bản ngay từ đầu bằng tên mô tả thay vì gọi trung tính A, B, C, không giao nhiệm vụ outcome theo kịch bản, trả lời trực tiếp mọi câu hỏi kỹ thuật thay vì hỏi ngược, và câu hỏi tổng kết gần như trùng với câu bị cấm là bản nào tốt nhất. Vì vậy dữ liệu của buổi này được nhóm xếp vào diện tham khảo, không dùng làm dữ liệu chính thức cho Gate 3. Nhóm giữ nguyên các dòng đã ghi trước đó nhưng đánh dấu rõ nguồn gốc để không ai vô tình dùng nhầm.
+
+Bên cạnh vấn đề cách dẫn buổi, nhóm còn phát hiện một lỗi nặng hơn nằm ở chính nội dung buổi test của Đăng: lời giải thích Option C bị lẫn sang cơ chế của Option B. Theo thiết kế gốc ở Chặng 2 và Chặng 3, Option C hoạt động bằng cách khớp câu hỏi với thư viện đã được coach duyệt từ trước, chỉ khi chưa có câu nào phù hợp thì mới sinh câu mới. Nhưng trong buổi test, Đăng lại giải thích Option C bằng logic mức độ tự tin của AI, đang thiết lập ở mức cao, để quyết định có đẩy câu hỏi cho Lab code hay không. Đây chính xác là cơ chế của Option B, không phải Option C. Ngoài ra, đặc tả gốc yêu cầu Option C hiện tên người duyệt và thời điểm duyệt, nhưng khi tester hỏi có biết đích danh người duyệt không, Đăng trả lời sẽ là ẩn danh, ngược hoàn toàn với đặc tả ban đầu.
+
+Hai lỗi này không phải lỗi ghi chép, mà là lỗi làm cho tester ở buổi 3 thực chất đang phản hồi về một Option C khác với Option C mà nhóm thiết kế. Vì vậy phần bình luận của tester 3 về bản C trong bảng dưới đây không được dùng để đánh giá thiết kế C thật, và nhóm cần thống nhất lại mô tả trước khi chạy buổi tiếp theo.
 
 ## Bảng A
 
 | Tester | Việc đầu tiên họ làm | Họ có mở phần dẫn chứng hay không | Chỗ họ dừng lâu | Họ làm gì khi gặp ngõ cụt | Câu nói đáng ghi lại nguyên văn |
 |---|---|---|---|---|---|
 | Tester 1 (Minh dẫn) | Bấm ngay vào nút trích nguồn khi câu trả lời hiện ra. | Có mở. Đọc kỹ, không liếc qua rồi bỏ. | Dừng lại khá lâu ngay ở bước rà nguồn, đọc để tự kiểm xem nguồn đúng và minh bạch hay không. | Không quan sát được, vì tester dừng lại và chốt A ngay ở bước rà nguồn, chưa đi tới tình huống ý thứ ba không có gì chống lưng. | "Cách này giúp mình dễ tin tưởng và học tiếp hơn." |
-| Tester 2 (Hải dẫn) | Chưa có ghi chép. | Chưa có ghi chép. | Chưa có ghi chép. | Chưa có ghi chép. | Chưa có ghi chép. |
-| Tester 3 (Đăng dẫn) | Không quan sát được. Người dẫn giới thiệu cơ chế trước khi tester thao tác. | Không quan sát được thao tác tự bấm; tester chỉ hỏi bằng lời về cơ chế dẫn chứng. | Không quan sát được. | Không quan sát được. | "Cái phần này mình vẫn có thể hỏi thêm đúng không? Hay nó chỉ trả lời kèm dẫn chứng để mình ấn vào xem luôn?" |
+| Tester 2 (Hải dẫn) | Ấn vào nút trích dẫn nguồn trước. | Có mở. Evidence được tester đọc và tự kiểm chứng, không chỉ liếc qua. | Không ghi nhận chỗ dừng riêng ở bản A; do dự chính của buổi rơi vào bản B. | Không thu thập được. Người ghi chú rằng phần lớn các luồng cần đến vai trò của con người vẫn chưa được tester hiểu rõ. | Không có câu nguyên văn được ghi lại cho riêng bản A. |
+| Tester 3 (Đăng dẫn, dữ liệu tham khảo) | Không quan sát được. Người dẫn giới thiệu cơ chế trước khi tester thao tác. | Không quan sát được thao tác tự bấm; tester chỉ hỏi bằng lời về cơ chế dẫn chứng. | Không quan sát được. | Không quan sát được. | "Cái phần này mình vẫn có thể hỏi thêm đúng không? Hay nó chỉ trả lời kèm dẫn chứng để mình ấn vào xem luôn?" |
 
 ## Bảng B
 
 | Tester | Việc đầu tiên họ làm | Họ có mở phần dẫn chứng hay không | Chỗ họ dừng lâu | Họ làm gì khi gặp ngõ cụt | Câu nói đáng ghi lại nguyên văn |
 |---|---|---|---|---|---|
 | Tester 1 (Minh dẫn) | Không quan sát được, vì tester dừng lại ở bản A và không đi tiếp sang bản B trong buổi này. | Không áp dụng cho bản này. | Không quan sát được. | Không quan sát được. | Tester có nói riêng về bản B khi so sánh cuối buổi: dù không hiểu bài, tester cũng không chắc mình sẽ hỏi hay không; nếu là gửi ẩn danh thì tự ước tính sáu mươi phần trăm sẽ gửi và bốn mươi phần trăm sẽ không gửi, tùy vào việc còn tra được bên ngoài AI tutor hay không. |
-| Tester 2 (Hải dẫn) | Chưa có ghi chép. | Chưa có ghi chép. | Chưa có ghi chép. | Chưa có ghi chép. | Chưa có ghi chép. |
-| Tester 3 (Đăng dẫn) | Không quan sát được. | Không áp dụng cho bản này. | Không quan sát được. | Không quan sát được. | "Vậy nếu Lab code chưa trả lời ngay thì mình vẫn có thể ấn vào xem lịch sử và tiếp tục sử dụng chatbot bình thường chứ?" |
+| Tester 2 (Hải dẫn) | Ấn nút gửi ẩn danh. | Không áp dụng theo đúng nghĩa trích dẫn, nhưng tester có đọc phần nội dung liên quan tới việc chờ coach duyệt. | Do dự chính của cả buổi rơi vào đây, khi tester chưa rõ cơ chế của AI trong lúc chờ câu hỏi được coach duyệt. | Không thu thập được. | Không có câu nguyên văn được ghi lại cho riêng bản B. |
+| Tester 3 (Đăng dẫn, dữ liệu tham khảo) | Không quan sát được. | Không áp dụng cho bản này. | Không quan sát được. | Không quan sát được. | "Vậy nếu Lab code chưa trả lời ngay thì mình vẫn có thể ấn vào xem lịch sử và tiếp tục sử dụng chatbot bình thường chứ?" |
 
 ## Bảng C
 
 | Tester | Việc đầu tiên họ làm | Họ có mở phần dẫn chứng hay không | Chỗ họ dừng lâu | Họ làm gì khi gặp ngõ cụt | Câu nói đáng ghi lại nguyên văn |
 |---|---|---|---|---|---|
 | Tester 1 (Minh dẫn) | Không quan sát được, vì tester dừng lại ở bản A và không đi tiếp sang bản C trong buổi này. | Không áp dụng cho bản này. | Không quan sát được. | Không quan sát được. | Tester có nói riêng về bản C khi so sánh cuối buổi: không thích lắm, vì AI làm hết, còn quyền tin hay không vẫn ở mình, nên có hay không cũng vậy, và vẫn phải tự đi tra AI bên ngoài. |
-| Tester 2 (Hải dẫn) | Chưa có ghi chép. | Chưa có ghi chép. | Chưa có ghi chép. | Chưa có ghi chép. | Chưa có ghi chép. |
-| Tester 3 (Đăng dẫn) | Không quan sát được. | Không áp dụng cho bản này. | Không quan sát được. | Hỏi ngược lại người dẫn về việc có xem được câu chưa duyệt hay không, thay vì tự bấm thử. | "Cái phần Lab code duyệt này mình có biết được đích danh người duyệt là ai không?" |
+| Tester 2 (Hải dẫn) | Ấn nút vẫn chưa hiểu. | Không ghi nhận rõ. | Không ghi nhận chỗ dừng riêng ở bản C. | Không thu thập được. | Không có câu nguyên văn được ghi lại cho riêng bản C. |
+| Tester 3 (Đăng dẫn, dữ liệu tham khảo, mô tả cơ chế sai) | Không quan sát được. | Không áp dụng cho bản này. | Không quan sát được. | Hỏi ngược lại người dẫn về việc có xem được câu chưa duyệt hay không, thay vì tự bấm thử. | "Cái phần Lab code duyệt này mình có biết được đích danh người duyệt là ai không?" — lưu ý câu trả lời của người dẫn cho câu hỏi này, rằng sẽ ẩn danh, và cách giải thích cơ chế C bằng mức độ tự tin của AI, đều lệch với đặc tả gốc của Option C, nên phản hồi của tester này về bản C không phản ánh đúng thiết kế C thật. |
 
 ## Ba dòng sau buổi thử, theo từng tester
 
@@ -518,28 +524,26 @@ Bản được chọn: A
 
 Lý do gắn với việc vừa làm: Tester nói cách trích nguồn giúp mình dễ tin tưởng và học tiếp hơn, gắn trực tiếp với hành vi vừa quan sát là dừng lại rà nguồn theo hai tiêu chí đúng và minh bạch.
 
-Cái giá phải trả mà chính họ nói ra: Không có. Tester không tự nêu điều gì mình phải đánh đổi khi chọn A. Theo quy tắc đã chốt, dòng này để trống nên lựa chọn của tester này không được tính vào kết quả tổng hợp chính thức, dù vẫn được ghi nhận làm dữ liệu tham khảo.
+Cái giá phải trả mà chính họ nói ra: Không có. Theo quy tắc đã chốt, dòng này để trống nên lựa chọn của tester này không được tính vào kết quả tổng hợp chính thức, dù vẫn được ghi nhận làm dữ liệu tham khảo.
 
 **Tester 2, Hải dẫn**
 
-Bản được chọn: chưa có ghi chép.
+Bản được chọn: A
 
-Lý do gắn với việc vừa làm: chưa có ghi chép.
+Lý do gắn với việc vừa làm: Tester cho rằng A là bản khả thi nhất. Bản B bị đánh giá là còn mơ hồ, đúng như chỗ do dự đã ghi nhận ở bảng B. Bản C bị đánh giá là sẽ cần phải chờ lâu vì cần con người tham gia vào nhiều bước.
 
-Cái giá phải trả mà chính họ nói ra: chưa có ghi chép.
+Cái giá phải trả mà chính họ nói ra: Không có. Người ghi ghi nhận lý do chọn A là vì tính đơn giản và nhanh chóng, nhưng đây vẫn là một ưu điểm được nêu ra chứ không phải một điều tester tự thừa nhận là phải đánh đổi khi chọn A. Theo quy tắc đã chốt, dòng này để trống nên lựa chọn của tester này cũng không được tính vào kết quả tổng hợp chính thức.
 
-**Tester 3, Đăng dẫn**
+**Tester 3, Đăng dẫn, dữ liệu tham khảo**
 
 Bản được chọn: A
 
 Lý do gắn với việc vừa làm: Học viên nói ấn tượng nhất với bản A vì luôn muốn có dẫn chứng cụ thể để xem chi tiết và kiểm chứng nguồn gốc khi AI trả lời, khớp với chính câu hỏi học viên đặt ra về cơ chế dẫn chứng ở phần đầu buổi.
 
-Cái giá phải trả mà chính họ nói ra: Không có. Học viên chỉ nói thêm rằng bản B cũng hấp dẫn vì câu hỏi chuyên sâu thì vẫn ưu tiên hỏi trực tiếp Lab code hơn, đây là một ý bổ sung chứ không phải trade-off của lựa chọn A. Theo quy tắc đã chốt, dòng này để trống nên lựa chọn của tester này không được tính vào kết quả tổng hợp chính thức.
+Cái giá phải trả mà chính họ nói ra: Không có. Theo quy tắc đã chốt, dòng này để trống nên lựa chọn của tester này không được tính vào kết quả tổng hợp chính thức. Ngoài ra dữ liệu buổi này đã được đánh dấu là tham khảo do lệch protocol, nên dù có trade-off cũng cần cân nhắc thêm trước khi dùng.
 
 ## Ghi chú cho nhóm
 
-Hiện bảng chung mới có đủ dữ liệu từ hai trong ba buổi. Cả hai buổi có dữ liệu đều cho kết quả nghiêng về A, nhưng không buổi nào có tester tự nói ra trade-off của việc chọn A, nên theo đúng quy tắc nhóm đã đặt ra, chưa có dòng nào đủ điều kiện tính là kết quả chính thức. Khi Hải bổ sung ghi chép của buổi mình, nhóm cập nhật lại đúng ba dòng còn trống ở trên, không cần viết lại toàn bộ bảng.
+Cả ba buổi đều nghiêng về A, nhưng không buổi nào có tester tự nói ra cái giá phải trả khi chọn A. Theo đúng quy tắc nhóm đã đặt ra, hiện chưa có dòng nào đủ điều kiện tính là kết quả chính thức của Gate 3, dù xu hướng đã khá rõ ràng qua cả ba nguồn độc lập.
 
-## Ghi chú về giới hạn
-
-Đây là buổi luyện kỹ năng với số người tham gia rất ít, và bản nháp thì vẽ tay, chưa chạy thật. Nhóm không tuyên bố bất kỳ phương án nào đã được validated. Kết quả mà nhóm mong đợi chỉ là một quyết định thiết kế cho bước tiếp theo.
+Việc cả ba đều nghiêng về A trong khi hai trên ba buổi không hoàn toàn đúng protocol khiến nhóm cần một buổi test thứ tư chạy đúng kịch bản Chặng 5 mới có thể coi kết quả này là chắc chắn. Ưu tiên trước khi chạy buổi tiếp theo là sửa lại phần mô tả Option C cho đúng với đặc tả gốc, để tránh lặp lại tình trạng tester đang phản hồi về một cơ chế không phải cơ chế nhóm thiết kế.
