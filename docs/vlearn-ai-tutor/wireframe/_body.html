@@ -1,0 +1,838 @@
+<style>
+.st{display:none}.st.on{display:block}
+.capbody{display:none}.capbody.on{display:block}
+.hot{cursor:pointer;position:relative}
+.hot::after{content:attr(data-n);position:absolute;top:-9px;right:-9px;width:18px;height:18px;border-radius:50%;
+ background:#fff;border:2px solid var(--line);font-family:'ShantellSans';font-weight:700;font-size:10px;
+ display:flex;align-items:center;justify-content:center;z-index:6;line-height:1}
+.hot:hover{box-shadow:0 0 0 3px var(--g2)}
+.card.hot{padding-right:28px}
+.card.hot::after{top:9px;right:8px}
+.buoc{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
+.bnut{font-family:'ShantellSans';font-weight:700;font-size:12px;border:2px solid var(--g3);border-radius:16px;
+ padding:3px 10px;background:#fff;color:var(--soft);cursor:pointer;white-space:nowrap}
+.bnut:hover{border-color:var(--line)}
+.bnut.on{border-color:var(--line);color:var(--ink);background:var(--g2)}
+</style>
+
+<div class="head">
+  <div class="eyebrow">VLEARN · Micro-prototype bấm được (lo-fi) · Web desktop</div>
+  <h1>Ba cách làm cho câu trả lời đáng tin — bấm để chạy thử</h1>
+  <p>Learner đang xem slide, gặp một khái niệm chưa rõ, hỏi trợ giảng AI. Ba bản dưới đây dùng chung một câu hỏi và một câu trả lời gốc. Chỉ khác nhau ở chỗ: <b>ai làm cho câu trả lời đáng tin, và làm lúc nào</b>.</p>
+  <span class="lo">Bấm vào chỗ có vòng tròn đánh số để đi tiếp · dãy nút trên phần chú thích để nhảy thẳng tới bước bất kỳ</span>
+</div>
+
+<div class="flow">
+  <span class="step">Đang xem slide <small>gặp khái niệm chưa rõ</small></span><span class="ar">→</span>
+  <span class="step">Hỏi trợ giảng AI <small>cùng một câu trả lời gốc</small></span><span class="ar">→</span>
+  <span class="step gate">A · Có link dẫn chứng</span>
+  <span class="ar" style="font-size:14px">hoặc</span>
+  <span class="step gate">B · Tự nói mình chưa chắc</span>
+  <span class="ar" style="font-size:14px">hoặc</span>
+  <span class="step gate">C · Câu đã có coach duyệt</span><span class="ar">→</span>
+  <span class="step">Học tiếp <small>hoặc bỏ qua</small></span>
+</div>
+
+<div class="board" style="margin-top:22px">
+  <div class="bt">Cả ba bản dùng chung ba thứ này — đây không phải màn hình</div>
+  <div class="g3c">
+    <div class="card"><span class="lbl">Learner hỏi gì</span><div class="small">"Slide nói ba phương án phải khác nhau ở cơ chế. Nhóm em làm ba bản chỉ khác chỗ hiện thông báo. Vậy có tính là ba cơ chế không ạ?"</div></div>
+    <div class="card"><span class="lbl">Trợ giảng trả lời gì</span><div class="small">Ba ý: khác cơ chế là gì · cách tự kiểm · và bài của nhóm em có tính không. Cả ba bản dùng đúng ba ý này.</div></div>
+    <div class="card"><span class="lbl">Bài học có sẵn gì</span><div class="small">Slide 4 và slide 7 <b>có</b> phần định nghĩa và cách tự kiểm. Còn "bài của nhóm em có tính không" thì <b>không có</b> trong bài.</div></div>
+  </div>
+</div>
+
+<!-- ============================================================ BẢN A ============================================================ -->
+<div style="margin:46px 0 -10px;padding:11px 15px;border:2px solid var(--line);border-radius:14px;background:var(--panel);display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <span style="font-family:'ShantellSans';font-weight:700;font-size:21px">Bản A · Có link dẫn chứng</span>
+  <span class="tag">Ai làm cho đáng tin: LEARNER</span>
+  <span class="small">Mỗi ý kèm link về đúng chỗ trong bài. Ý nào không có chỗ dẫn thì nói thẳng. Learner tự đọc rồi tự quyết.</span>
+</div>
+
+<div class="cell" data-flow="A">
+  <div class="browser">
+
+    <!-- ---------- A1 ---------- -->
+    <div class="st on" data-st="A1">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=4</span></div>
+      <div class="screen"><span class="mtag">A1</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>Bài 7 · Day 18</small></div>
+          <span style="flex:1"></span><span class="chip gh">0/5 bài</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="nav">User Testing Script <span class="small">· Bài đọc</span></div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 4 / 18</span><span class="row" style="gap:5px"><span class="chip gh">◄</span><span class="chip gh">►</span></span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Prototype nhiều phương án</div>
+              <div class="small" style="margin-top:3px">Cùng một giả định, hãy khám phá nhiều cơ chế giải.</div>
+              <div class="imgph" style="height:150px;margin-top:9px">hình trong slide</div>
+            </div>
+            <div class="card gh"><div class="row sb"><span class="small">Slide 5 — Distance check</span><span class="small">→</span></div></div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="bub me">Nhóm em làm ba bản chỉ khác chỗ hiện thông báo. Vậy có tính là ba cơ chế khác nhau không ạ?</div>
+            <div class="card hi">
+              <span class="lbl">Trả lời · mỗi ý một link dẫn chứng</span>
+              <div class="col" style="gap:12px">
+                <div>
+                  <div style="font-size:13.5px;line-height:1.32">Khác cơ chế là khác ở cách hệ thống làm việc: ai làm, làm lúc nào, ai quyết.</div>
+                  <div class="row" style="margin-top:6px"><span class="chip gh hot" data-n="1" data-goto="A2">🔗 Slide 4 — xem chỗ dẫn</span></div>
+                </div>
+                <div>
+                  <div style="font-size:13.5px;line-height:1.32">Cách tự kiểm: tả ba bản bằng lời, không nhắc màu, chữ, bố cục. Tả xong vẫn thấy giống nhau là chưa đủ khác.</div>
+                  <div class="row" style="margin-top:6px"><span class="chip gh hot" data-n="2" data-goto="A2">🔗 Slide 7 — xem chỗ dẫn</span></div>
+                </div>
+                <div>
+                  <div style="font-size:13.5px;line-height:1.32">Ba bản của nhóm em chỉ khác chỗ hiện thông báo, nên vẫn tính là một cơ chế.</div>
+                  <div class="row" style="margin-top:6px"><span class="tag hot" data-n="3" data-goto="A3">⚠ KHÔNG CÓ TRONG BÀI</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="row sb"><span class="small">2 trong 3 ý dẫn được về bài</span></div>
+            <div class="field">Hỏi bất cứ điều gì…</div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- A2 ---------- -->
+    <div class="st" data-st="A2">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=4&amp;dan=y1</span></div>
+      <div class="screen"><span class="mtag">A2</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>đang mở chỗ dẫn của ý 1</small></div>
+          <span style="flex:1"></span><span class="btn sm gh hot" data-n="3" data-goto="A1">Đóng chỗ dẫn</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="nav">User Testing Script <span class="small">· Bài đọc</span></div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 4 / 18</span><span class="small">trợ giảng dẫn tới đây</span></div>
+            <div class="card hi">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Prototype nhiều phương án</div>
+              <div class="imgph" style="height:74px;margin:8px 0">hình trong slide</div>
+              <div class="card gh">
+                <span class="lbl">Chỗ trợ giảng dẫn</span>
+                <div style="font-size:13.5px;line-height:1.35">"Ba phương án phải khác nhau ở cách hệ thống làm việc: ai làm, làm lúc nào, ai quyết. Khác ở cách hiển thị không được tính."</div>
+              </div>
+            </div>
+            <div class="card gh"><div class="row sb"><span class="small">Slide 7 — chỗ dẫn của ý 2</span><span class="small">→</span></div></div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="card">
+              <span class="lbl">Đang đối chiếu ý 1</span>
+              <div style="font-size:13.5px;line-height:1.32">"Khác cơ chế là khác ở cách hệ thống làm việc: ai làm, làm lúc nào, ai quyết."</div>
+              <div class="row" style="margin-top:9px"><span class="btn sm hot" data-n="1" data-goto="A3">Khớp</span><span class="btn sm gh">Không khớp</span></div>
+            </div>
+            <div class="list">
+              <div class="li sel"><span class="ic"></span><span>Ý 1 · Slide 4</span><span class="r">đang xem</span></div>
+              <div class="li"><span class="ic"></span><span>Ý 2 · Slide 7</span><span class="r">✓ đã xem</span></div>
+            </div>
+            <div class="card hi hot" data-n="2" data-goto="A3">
+              <span class="lbl">Ý 3 · chưa xem</span>
+              <div style="font-size:13.5px;line-height:1.32">Ý này không có chỗ dẫn nào. Bấm để xem trợ giảng nói gì.</div>
+            </div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- A3 ---------- -->
+    <div class="st" data-st="A3">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=4&amp;dan=y3</span></div>
+      <div class="screen"><span class="mtag">A3</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>ý 3 · không có chỗ dẫn</small></div>
+          <span style="flex:1"></span><span class="btn sm gh hot" data-n="3" data-goto="A1">Đóng chỗ dẫn</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="nav">User Testing Script <span class="small">· Bài đọc</span></div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 4 / 18</span><span class="small">không có chỗ nào để dẫn</span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Prototype nhiều phương án</div>
+              <div class="imgph" style="height:96px;margin:8px 0">hình trong slide</div>
+              <div class="card dsh"><div class="small">Đã tìm cả 18 slide và phần bài đọc: không có chỗ nào nói về trường hợp của nhóm em.</div></div>
+            </div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="small">Em đã xem chỗ dẫn của ý 1 và ý 2.</div>
+            <div class="card hi">
+              <span class="lbl">Ý 3 · không có chỗ dẫn</span>
+              <div style="font-size:13.5px;line-height:1.32">"Ba bản của nhóm em chỉ khác chỗ hiện thông báo, nên vẫn tính là một cơ chế."</div>
+              <div class="small" style="margin-top:7px">Bài học không nói gì về trường hợp này. Ý trên là trợ giảng tự suy ra.</div>
+              <div class="row" style="margin-top:10px"><span class="btn sm hot" data-n="1" data-goto="A4a">Vẫn tin, làm theo</span><span class="btn sm gh hot" data-n="2" data-goto="A4b">Bỏ qua, tính sau</span></div>
+            </div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- A4a ---------- -->
+    <div class="st" data-st="A4a">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=5</span></div>
+      <div class="screen"><span class="mtag">A4</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>Bài 7 · Day 18</small></div>
+          <span style="flex:1"></span><span class="chip gh">1/5 bài</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="nav">User Testing Script <span class="small">· Bài đọc</span></div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 5 / 18</span><span class="row" style="gap:5px"><span class="chip gh">◄</span><span class="chip gh">►</span></span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Distance check</div>
+              <div class="small" style="margin-top:3px">Tả ba bản bằng lời, cấm nhắc màu, chữ, bố cục.</div>
+              <div class="imgph" style="height:150px;margin-top:9px">hình trong slide</div>
+            </div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="card hi">
+              <span class="lbl">Đã ghi lựa chọn của em</span>
+              <div style="font-size:13.5px;line-height:1.32">Em chọn tin ý 3 và làm theo.</div>
+              <div class="small" style="margin-top:7px">Ý đó vẫn không có gì trong bài chống lưng. Nếu sau này thấy sai, em quay lại slide 4.</div>
+            </div>
+            <div class="list">
+              <div class="li"><span class="ic"></span><span>Slide 4 · đã đọc</span><span class="r">1 ý tự tin</span></div>
+            </div>
+            <div class="small">Không ai được báo. Trợ giảng không nhắc lại chuyện này nữa.</div>
+            <div class="field">Hỏi bất cứ điều gì…</div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- A4b ---------- -->
+    <div class="st" data-st="A4b">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=5</span></div>
+      <div class="screen"><span class="mtag">A5</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>Bài 7 · Day 18</small></div>
+          <span style="flex:1"></span><span class="chip gh">1/5 bài</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="nav">User Testing Script <span class="small">· Bài đọc</span></div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 5 / 18</span><span class="row" style="gap:5px"><span class="chip gh">◄</span><span class="chip gh">►</span></span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Distance check</div>
+              <div class="small" style="margin-top:3px">Tả ba bản bằng lời, cấm nhắc màu, chữ, bố cục.</div>
+              <div class="imgph" style="height:150px;margin-top:9px">hình trong slide</div>
+            </div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="card hi">
+              <span class="lbl">Đã đánh dấu slide 4 là còn chưa chắc</span>
+              <div style="font-size:13.5px;line-height:1.32">Em bỏ qua ý 3 và học tiếp.</div>
+              <div class="small" style="margin-top:7px">Không ai được báo về chỗ chưa chắc này. Em tự nhớ quay lại.</div>
+            </div>
+            <div class="list">
+              <div class="li"><span class="ic"></span><span>Chỗ còn chưa chắc</span><span class="r">1</span></div>
+            </div>
+            <div class="field">Hỏi bất cứ điều gì…</div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="cap">
+    <div class="buoc">
+      <span class="bnut on" data-go="A1">1 · Trả lời kèm link</span>
+      <span class="bnut" data-go="A2">2 · Mở chỗ dẫn</span>
+      <span class="bnut" data-go="A3">3 · Ý không có dẫn chứng</span>
+      <span class="bnut" data-go="A4a">4a · Vẫn tin</span>
+      <span class="bnut" data-go="A4b">4b · Bỏ qua</span>
+    </div>
+    <div class="capbody on" data-cap="A1">
+      <div class="ct">1 · Trả lời kèm link dẫn chứng</div>
+      <div class="cw">Learner tự mở trợ giảng</div>
+      <div class="cm">Mỗi ý phải chỉ được nó dựa vào slide nào. Ý nào không dựa vào đâu thì bị gắn nhãn ngay tại chỗ.</div>
+      <div class="cm"><b>Bấm thử:</b> ① hoặc ② để mở chỗ dẫn · ③ để xem ý không có dẫn chứng.</div>
+    </div>
+    <div class="capbody" data-cap="A2">
+      <div class="ct">2 · Mở chỗ dẫn để tự đối chiếu</div>
+      <div class="cw">Learner tự kiểm chứng</div>
+      <div class="cm">Bấm link thì slide nhảy về đúng đoạn, ý của trợ giảng ghim bên phải để soi cạnh nhau.</div>
+      <div class="cm"><b>Cần xem:</b> learner đọc kỹ đoạn gốc hay chỉ liếc rồi bấm "Khớp".</div>
+    </div>
+    <div class="capbody" data-cap="A3">
+      <div class="ct">3 · Ý không có chỗ dẫn</div>
+      <div class="cw">Learner phải tự quyết</div>
+      <div class="cm">Hai ý đầu đối chiếu được, còn ý thứ ba — thứ learner cần nhất — thì trống. Bản A không mở đường sang người thật.</div>
+      <div class="cm"><b>Đây là chỗ bản A hụt:</b> chỉ còn "vẫn tin" hoặc "bỏ qua". Hai lựa chọn này chính là hai hành vi nhóm đã ghi nhận khi phỏng vấn.</div>
+    </div>
+    <div class="capbody" data-cap="A4a">
+      <div class="ct">4a · Vẫn tin rồi đi tiếp</div>
+      <div class="cw">Kết cục thứ nhất</div>
+      <div class="cm">Learner đi tiếp trên một ý mà chính hệ thống nói là không có gì chống lưng. Không ai biết chuyện này.</div>
+      <div class="cm"><b>Cần đo:</b> bao nhiêu người chọn nhánh này, và họ có quay lại slide 4 lần nào không.</div>
+    </div>
+    <div class="capbody" data-cap="A4b">
+      <div class="ct">4b · Bỏ qua rồi đi tiếp</div>
+      <div class="cw">Kết cục thứ hai</div>
+      <div class="cm">Slide được đánh dấu còn chưa chắc, nhưng dấu đó chỉ mình learner thấy. Coach không nhận được tín hiệu nào.</div>
+      <div class="cm"><b>Cần đo:</b> đánh dấu xong rồi có ai quay lại thật không, hay dấu đó nằm im tới hết khoá.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ BẢN B ============================================================ -->
+<div style="margin:46px 0 -10px;padding:11px 15px;border:2px solid var(--line);border-radius:14px;background:var(--panel);display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <span style="font-family:'ShantellSans';font-weight:700;font-size:21px">Bản B · Tự nói mình chưa chắc</span>
+  <span class="tag">Ai làm cho đáng tin: HỆ THỐNG rồi COACH</span>
+  <span class="small">Trợ giảng tự chấm mình chắc tới đâu. Chưa chắc thì đề nghị gửi câu hỏi cho coach, giấu tên learner. Learner học tiếp trong lúc chờ.</span>
+</div>
+
+<div class="cell" data-flow="B">
+  <div class="browser">
+
+    <!-- ---------- B1 ---------- -->
+    <div class="st on" data-st="B1">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=4</span></div>
+      <div class="screen"><span class="mtag">B1</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>Bài 7 · Day 18</small></div>
+          <span style="flex:1"></span><span class="chip gh">0/5 bài</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="nav">User Testing Script <span class="small">· Bài đọc</span></div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 4 / 18</span><span class="row" style="gap:5px"><span class="chip gh">◄</span><span class="chip gh">►</span></span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Prototype nhiều phương án</div>
+              <div class="small" style="margin-top:3px">Cùng một giả định, hãy khám phá nhiều cơ chế giải.</div>
+              <div class="imgph" style="height:150px;margin-top:9px">hình trong slide</div>
+            </div>
+            <div class="card gh"><div class="row sb"><span class="small">Slide 5 — Distance check</span><span class="small">→</span></div></div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="bub me">Nhóm em làm ba bản chỉ khác chỗ hiện thông báo. Vậy có tính là ba cơ chế khác nhau không ạ?</div>
+            <div class="card">
+              <div style="font-size:13.5px;line-height:1.32">Khác cơ chế là khác ở cách hệ thống làm việc: ai làm, làm lúc nào, ai quyết. Cách tự kiểm là tả ba bản bằng lời, không nhắc màu, chữ, bố cục. Ba bản của nhóm em chỉ khác chỗ hiện thông báo, nên vẫn tính là một cơ chế.</div>
+            </div>
+            <div class="card hi">
+              <div class="row"><span class="chip sel">Trợ giảng tự chấm: CHƯA CHẮC</span></div>
+              <div class="small" style="margin:6px 0 9px">Phần nói về bài của nhóm em không có trong bài học. Gửi cho coach xem lại nhé?</div>
+              <div class="field" style="line-height:1.3">Ba bản của nhóm em chỉ khác chỗ hiện thông báo. Vậy có tính là ba cơ chế không ạ?</div>
+              <div class="small" style="margin:6px 0">Coach thấy câu hỏi và slide em đang xem. <b>Không thấy tên em.</b></div>
+              <div class="row"><span class="btn fill hot" data-n="1" data-goto="B2">Gửi, giấu tên</span><span class="btn gh hot" data-n="2" data-goto="B5">Thôi</span></div>
+            </div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- B2 ---------- -->
+    <div class="st" data-st="B2">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=6</span></div>
+      <div class="screen"><span class="mtag">B2</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>Bài 7 · Day 18</small></div>
+          <span style="flex:1"></span><span class="tag">1 câu đang chờ coach</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="navh">CÂU HỎI CỦA EM</div>
+            <div class="nav">Slide 4 · đang chờ ⏳</div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 6 / 18</span><span class="row" style="gap:5px"><span class="chip gh">◄</span><span class="chip gh">►</span></span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Giữ nguyên fixture giữa các bản</div>
+              <div class="small" style="margin-top:3px">Đổi một thứ mỗi lần, nếu không sẽ không biết người dùng phản ứng với cái gì.</div>
+              <div class="imgph" style="height:150px;margin-top:9px">hình trong slide</div>
+            </div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="card gh">
+              <div class="row sb"><span class="small">Đã gửi lúc 11:42 · giấu tên</span><span class="tag">Thứ 3 trong hàng</span></div>
+              <div class="small" style="margin-top:5px">Coach thường trả lời trong khoảng 15 phút. Em cứ xem tiếp slide khác.</div>
+              <div class="row" style="margin-top:8px"><span class="btn sm gh hot" data-n="2" data-goto="B5">Rút lại câu hỏi</span></div>
+            </div>
+            <div class="card hi hot" data-n="1" data-goto="B3">
+              <div class="row sb"><span style="font-family:'ShantellSans';font-weight:700;font-size:14px">Coach Ngân vừa trả lời</span><span class="small">11:53</span></div>
+              <div class="small" style="margin-top:5px">Bấm để xem câu trả lời.</div>
+            </div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- B3 ---------- -->
+    <div class="st" data-st="B3">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=6&amp;coach=1</span></div>
+      <div class="screen"><span class="mtag">B3</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>coach đã trả lời</small></div>
+          <span style="flex:1"></span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="navh">CÂU HỎI CỦA EM</div>
+            <div class="nav on">Slide 4 · đã có trả lời</div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 6 / 18</span><span class="row" style="gap:5px"><span class="chip gh">◄</span><span class="chip gh">►</span></span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Giữ nguyên fixture giữa các bản</div>
+              <div class="imgph" style="height:130px;margin-top:9px">hình trong slide</div>
+            </div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="card hi">
+              <div class="row"><span class="li" style="padding:0;border:0"><span class="ic"></span></span><span style="font-family:'ShantellSans';font-weight:700;font-size:14px">Coach Ngân</span><span class="tag">NGƯỜI THẬT</span></div>
+              <div class="small" style="margin:3px 0 6px">11:53 · sau 11 phút</div>
+              <div style="font-size:13.5px;line-height:1.32">Ba bản của em đang khác lớp vỏ chứ chưa khác cơ chế. Thử đổi xem ai là người quyết: bản này để người dùng quyết, bản kia để hệ thống quyết. Nhóm 5 tuần trước cũng vướng chỗ này.</div>
+              <div class="row" style="margin-top:10px"><span class="btn sm hot" data-n="1" data-goto="B4">Hiểu rồi</span><span class="btn sm gh hot" data-n="2" data-goto="B2">Vẫn chưa rõ, hỏi tiếp</span></div>
+            </div>
+            <div class="small">Câu hỏi của em vẫn giấu tên. Coach không biết ai hỏi.</div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- B4 ---------- -->
+    <div class="st" data-st="B4">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=4</span></div>
+      <div class="screen"><span class="mtag">B4</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>Bài 7 · Day 18</small></div>
+          <span style="flex:1"></span><span class="chip gh">1/5 bài</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="nav">User Testing Script <span class="small">· Bài đọc</span></div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 4 / 18</span><span class="small">quay lại chỗ đã hỏi</span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Prototype nhiều phương án</div>
+              <div class="imgph" style="height:96px;margin:8px 0">hình trong slide</div>
+            </div>
+            <div class="card hi">
+              <span class="lbl">Hỏi đáp gắn vào slide này</span>
+              <div class="li" style="border:0;padding:6px 0"><span class="ic"></span><span class="small">Coach Ngân · "khác lớp vỏ chứ chưa khác cơ chế"</span><span class="r">✓</span></div>
+              <div class="small">Bạn học sau vào slide 4 sẽ thấy sẵn câu này.</div>
+            </div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="card hi">
+              <span class="lbl">Đã xong</span>
+              <div style="font-size:13.5px;line-height:1.32">Câu trả lời của coach được ghim vào slide 4.</div>
+              <div class="small" style="margin-top:7px">Từ giờ, ai học slide này cũng thấy câu đó mà không phải hỏi lại.</div>
+            </div>
+            <div class="small">Một câu hỏi giấu tên vừa biến thành tài liệu chung của lớp.</div>
+            <div class="field">Hỏi bất cứ điều gì…</div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- B5 ---------- -->
+    <div class="st" data-st="B5">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=5</span></div>
+      <div class="screen"><span class="mtag">B5</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>Bài 7 · Day 18</small></div>
+          <span style="flex:1"></span><span class="chip gh">1/5 bài</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="nav">User Testing Script <span class="small">· Bài đọc</span></div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 5 / 18</span><span class="row" style="gap:5px"><span class="chip gh">◄</span><span class="chip gh">►</span></span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Distance check</div>
+              <div class="small" style="margin-top:3px">Tả ba bản bằng lời, cấm nhắc màu, chữ, bố cục.</div>
+              <div class="imgph" style="height:150px;margin-top:9px">hình trong slide</div>
+            </div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="card hi">
+              <span class="lbl">Em chọn không gửi</span>
+              <div style="font-size:13.5px;line-height:1.32">Câu trả lời chưa chắc vẫn giữ nguyên. Không ai xem lại.</div>
+              <div class="small" style="margin-top:7px">Trợ giảng không hỏi lại lần nữa cho slide này.</div>
+            </div>
+            <div class="small">Nhánh này đúng bằng hiện trạng: learner đi tiếp trên câu mình không chắc.</div>
+            <div class="field">Hỏi bất cứ điều gì…</div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="cap">
+    <div class="buoc">
+      <span class="bnut on" data-go="B1">1 · Tự nhận chưa chắc</span>
+      <span class="bnut" data-go="B2">2 · Đã gửi, học tiếp</span>
+      <span class="bnut" data-go="B3">3 · Coach trả lời</span>
+      <span class="bnut" data-go="B4">4 · Ghim vào slide</span>
+      <span class="bnut" data-go="B5">Nhánh · không gửi</span>
+    </div>
+    <div class="capbody on" data-cap="B1">
+      <div class="ct">1 · Trợ giảng tự nhận chưa chắc</div>
+      <div class="cw">Hệ thống chủ động mở đường</div>
+      <div class="cm">Câu trả lời vẫn hiện đủ, nhưng trợ giảng nói luôn là mình chưa chắc, và soạn sẵn câu hỏi để gửi cho coach. Learner sửa lại được, và được giấu tên.</div>
+      <div class="cm"><b>Bấm thử:</b> ① gửi cho coach · ② không gửi, xem nhánh còn lại.</div>
+    </div>
+    <div class="capbody" data-cap="B2">
+      <div class="ct">2 · Đã gửi, vẫn học tiếp</div>
+      <div class="cw">Learner không phải ngồi chờ</div>
+      <div class="cm">Câu hỏi nằm trong hàng đợi, learner sang slide khác. Coach trả lời xong thì thẻ báo hiện lên.</div>
+      <div class="cm"><b>Cần đo:</b> learner chịu chờ bao lâu trước khi mở ChatGPT ở ngoài.</div>
+    </div>
+    <div class="capbody" data-cap="B3">
+      <div class="ct">3 · Câu trả lời của người thật</div>
+      <div class="cw">Coach trả lời sau 11 phút</div>
+      <div class="cm">Coach nói được thứ trợ giảng không nói được: kinh nghiệm của lớp trước, và một hướng sửa cụ thể cho bài của nhóm.</div>
+      <div class="cm"><b>Cần xem:</b> learner thấy câu này khác câu AI ở chỗ nào, có đáng để chờ không.</div>
+    </div>
+    <div class="capbody" data-cap="B4">
+      <div class="ct">4 · Ghim vào slide cho lớp sau</div>
+      <div class="cw">Một câu hỏi thành tài liệu chung</div>
+      <div class="cm">Câu trả lời của coach ở lại slide 4. Người học sau vào slide này là thấy sẵn.</div>
+      <div class="cm"><b>Đáng chú ý:</b> chạy đủ lâu thì bản B tự đẻ ra cái kho mà bản C cần có sẵn từ đầu. Hai bản có thể nối vào nhau.</div>
+    </div>
+    <div class="capbody" data-cap="B5">
+      <div class="ct">Nhánh · không gửi</div>
+      <div class="cw">Kết cục khi learner từ chối</div>
+      <div class="cm">Không gửi thì mọi thứ dừng lại: câu chưa chắc vẫn nguyên đó, không ai xem lại.</div>
+      <div class="cm"><b>Đây là chỗ bản B đứt:</b> cả cơ chế phụ thuộc vào một cú bấm mà người ngại hỏi có thể không bấm.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ BẢN C ============================================================ -->
+<div style="margin:46px 0 -10px;padding:11px 15px;border:2px solid var(--line);border-radius:14px;background:var(--panel);display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <span style="font-family:'ShantellSans';font-weight:700;font-size:21px">Bản C · Câu đã có coach duyệt</span>
+  <span class="tag">Ai làm cho đáng tin: COACH, TỪ TRƯỚC</span>
+  <span class="small">Hệ thống tìm trong kho câu coach đã duyệt rồi đưa lên trước. Chưa có câu nào hợp thì mới sinh câu mới và tự xếp vào hàng chờ duyệt.</span>
+</div>
+
+<div class="cell" data-flow="C">
+  <div class="browser">
+
+    <!-- ---------- C1 ---------- -->
+    <div class="st on" data-st="C1">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=4</span></div>
+      <div class="screen"><span class="mtag">C1</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>Bài 7 · Day 18</small></div>
+          <span style="flex:1"></span><span class="chip gh">0/5 bài</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="nav">User Testing Script <span class="small">· Bài đọc</span></div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 4 / 18</span><span class="small">⏱ em đã ở slide này 4 phút</span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Prototype nhiều phương án</div>
+              <div class="small" style="margin-top:3px">Cùng một giả định, hãy khám phá nhiều cơ chế giải.</div>
+              <div class="imgph" style="height:150px;margin-top:9px">hình trong slide</div>
+            </div>
+            <div class="card gh"><div class="row sb"><span class="small">Slide 5 — Distance check</span><span class="small">→</span></div></div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="small">Trợ giảng tự mở — em chưa hỏi gì.</div>
+            <div class="card hi">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:14.5px">Ở slide này, 12 bạn đã hỏi cùng một câu.</div>
+              <div class="row" style="margin:7px 0"><span class="tag">✓ COACH NGÂN ĐÃ DUYỆT · 04/08</span></div>
+              <div style="font-size:13.5px;line-height:1.32">"Khác chỗ hiện thông báo là khác lớp vỏ, chưa tính là khác cơ chế. Muốn khác cơ chế thì đổi xem ai quyết: người dùng quyết hay hệ thống quyết."</div>
+              <div class="row sb" style="margin-top:8px"><span class="small">9 trong 12 bạn thấy hiểu ra</span><span class="small">🔗 Slide 4</span></div>
+            </div>
+            <div class="row"><span class="btn fill hot" data-n="1" data-goto="C2">Hiểu rồi</span><span class="btn gh hot" data-n="2" data-goto="C3">Vẫn chưa rõ</span></div>
+            <div class="small">Chọn "vẫn chưa rõ" thì slide này được ghi lại để coach viết thêm cho lớp sau.</div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- C2 ---------- -->
+    <div class="st" data-st="C2">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=5</span></div>
+      <div class="screen"><span class="mtag">C2</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>Bài 7 · Day 18</small></div>
+          <span style="flex:1"></span><span class="chip gh">1/5 bài</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="nav">User Testing Script <span class="small">· Bài đọc</span></div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 5 / 18</span><span class="row" style="gap:5px"><span class="chip gh">◄</span><span class="chip gh">►</span></span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Distance check</div>
+              <div class="small" style="margin-top:3px">Tả ba bản bằng lời, cấm nhắc màu, chữ, bố cục.</div>
+              <div class="imgph" style="height:150px;margin-top:9px">hình trong slide</div>
+            </div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="card hi">
+              <span class="lbl">Đã ghi nhận</span>
+              <div style="font-size:13.5px;line-height:1.32">Em đánh dấu hiểu rồi. Câu này giờ là 10 trong 13 bạn thấy hiểu ra.</div>
+              <div class="small" style="margin-top:7px">Trợ giảng thu gọn lại, không hỏi thêm gì.</div>
+            </div>
+            <div class="small">Cả lượt này em không gõ chữ nào và không phải chờ ai.</div>
+            <div class="field">Hỏi bất cứ điều gì…</div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- C3 ---------- -->
+    <div class="st" data-st="C3">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=4&amp;chuaro=1</span></div>
+      <div class="screen"><span class="mtag">C3</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>đã báo là chưa rõ</small></div>
+          <span style="flex:1"></span><span class="chip gh">0/5 bài</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="navh">KHO CÂU ĐÃ DUYỆT</div>
+            <div class="nav">Slide 4 · 1 câu · đã báo chưa rõ</div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 4 / 18</span><span class="small">em vẫn đang ở đây</span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Prototype nhiều phương án</div>
+              <div class="imgph" style="height:96px;margin:8px 0">hình trong slide</div>
+              <div class="card dsh"><div class="small">Câu đã duyệt trả lời chung cho cả lớp, chưa nói tới trường hợp riêng của nhóm em.</div></div>
+            </div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="card hi">
+              <span class="lbl">Đã ghi lại cho coach</span>
+              <div style="font-size:13.5px;line-height:1.32">Coach sẽ viết thêm cho slide này. Thường là trước buổi sau.</div>
+              <div class="small" style="margin-top:7px">Còn bây giờ thì em vẫn chưa có câu trả lời nào khác.</div>
+              <div class="row" style="margin-top:10px"><span class="btn sm gh hot" data-n="1" data-goto="C4">Nhờ trợ giảng viết câu mới</span></div>
+            </div>
+            <div class="small">Kho chỉ trả lời được câu đã có người hỏi trước. Câu lạ thì phải chờ.</div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- C4 ---------- -->
+    <div class="st" data-st="C4">
+      <div class="bbar"><span class="dots"><i></i><i></i><i></i></span><span class="tab">VLearn — Bài 7</span>
+        <span class="url">vlearn.dev/course/comp3011/reader?day=D18&amp;slide=4&amp;moi=1</span></div>
+      <div class="screen"><span class="mtag">C4</span>
+        <div class="topbar"><div class="logo">VL</div>
+          <div class="tt">Design the Experiment<small>câu mới · chưa ai duyệt</small></div>
+          <span style="flex:1"></span><span class="chip gh">0/5 bài</span><span class="chip gh">N ▾</span></div>
+        <div class="wsp c3" style="grid-template-columns:186px 1fr 372px">
+          <div class="side">
+            <div class="navh">NỘI DUNG BÀI HỌC</div>
+            <div class="nav on">Design the Experiment <span class="small">· Slide</span></div>
+            <div class="nav">Human-Centered AI Design <span class="small">· Slide</span></div>
+            <div class="nav">Prototype Interview <span class="small">· Slide</span></div>
+            <div class="nav">Help Users Think Aloud <span class="small">· Video</span></div>
+            <div class="navh">KHO CÂU ĐÃ DUYỆT</div>
+            <div class="nav">8 câu · 0 câu cho trường hợp này</div>
+          </div>
+          <div class="main">
+            <div class="row sb"><span class="lbl" style="margin:0">Slide 4 / 18</span><span class="row" style="gap:5px"><span class="chip gh">◄</span><span class="chip gh">►</span></span></div>
+            <div class="card">
+              <div style="font-family:'ShantellSans';font-weight:700;font-size:16px">Prototype nhiều phương án</div>
+              <div class="small" style="margin-top:3px">Cùng một giả định, hãy khám phá nhiều cơ chế giải.</div>
+              <div class="imgph" style="height:150px;margin-top:9px">hình trong slide</div>
+            </div>
+          </div>
+          <div class="main pane">
+            <div class="row sb"><span class="lbl" style="margin:0">✦ Trợ giảng AI</span><span class="chip gh">✕</span></div>
+            <div class="bub me">Nhóm em làm ba bản chỉ khác chỗ hiện thông báo. Vậy có tính là ba cơ chế khác nhau không ạ?</div>
+            <div class="card hi">
+              <div class="row sb"><span class="tag">CHƯA AI DUYỆT</span><span class="small">trợ giảng vừa sinh</span></div>
+              <div style="font-size:13.5px;line-height:1.32;margin-top:7px">"Ba bản của nhóm em chỉ khác chỗ hiện thông báo, nên vẫn tính là một cơ chế."</div>
+              <div class="small" style="margin-top:6px">Chưa có người nào xem lại câu này.</div>
+            </div>
+            <div class="card gh">
+              <div class="row sb"><span class="small">Đã tự xếp vào hàng chờ duyệt</span><span class="tag">Thứ 5 trong 9</span></div>
+              <div class="small" style="margin-top:5px">Coach duyệt gộp một lượt, thường vào cuối buổi.</div>
+              <div class="row" style="margin-top:8px"><span class="btn sm gh">Báo em khi có người duyệt</span></div>
+            </div>
+            <div class="small" style="text-align:center">Trợ giảng AI có thể sai — hãy đối chiếu với bài giảng.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="cap">
+    <div class="buoc">
+      <span class="bnut on" data-go="C1">1 · Câu đã duyệt tự mở</span>
+      <span class="bnut" data-go="C2">2 · Hiểu rồi</span>
+      <span class="bnut" data-go="C3">3 · Vẫn chưa rõ</span>
+      <span class="bnut" data-go="C4">4 · Câu chưa ai duyệt</span>
+    </div>
+    <div class="capbody on" data-cap="C1">
+      <div class="ct">1 · Câu đã có coach duyệt</div>
+      <div class="cw">Learner dừng lâu, hệ thống tự mở</div>
+      <div class="cm">Learner không gõ chữ nào. Hệ thống thấy dừng lâu ở slide vốn đã có câu duyệt sẵn thì đưa lên, kèm tên người duyệt và số bạn thấy hiểu ra.</div>
+      <div class="cm"><b>Bấm thử:</b> ① hiểu rồi · ② vẫn chưa rõ, xem hệ thống làm gì tiếp.</div>
+    </div>
+    <div class="capbody" data-cap="C2">
+      <div class="ct">2 · Hiểu rồi, đi tiếp</div>
+      <div class="cw">Đường ngắn nhất trong ba bản</div>
+      <div class="cm">Không gõ chữ, không chờ ai, không phải tự đi kiểm. Đây là lúc bản C mạnh nhất.</div>
+      <div class="cm"><b>Cần xem:</b> learner có thấy tự mở là phiền không, và nhãn "coach đã duyệt" có đủ để thôi mở ChatGPT không.</div>
+    </div>
+    <div class="capbody" data-cap="C3">
+      <div class="ct">3 · Vẫn chưa rõ</div>
+      <div class="cw">Câu duyệt không khớp trường hợp riêng</div>
+      <div class="cm">Kho trả lời chung cho cả lớp. Trường hợp riêng của nhóm thì phải chờ coach viết thêm, thường là sang buổi sau.</div>
+      <div class="cm"><b>Đây là chỗ bản C cứng:</b> kho nhanh nhưng ít linh hoạt. Câu lạ thì kho không giúp được gì.</div>
+    </div>
+    <div class="capbody" data-cap="C4">
+      <div class="ct">4 · Câu chưa ai duyệt</div>
+      <div class="cw">Lớp đầu tiên, kho còn trống</div>
+      <div class="cm">Không có câu nào hợp thì trợ giảng sinh câu mới, gắn nhãn chưa ai duyệt và tự xếp vào hàng chờ.</div>
+      <div class="cm"><b>Đây là chỗ bản C hụt:</b> giá trị nằm ở kho, mà kho chỉ đầy sau vài lớp. Lúc đó bản C tụt về đúng bằng hiện trạng.</div>
+    </div>
+  </div>
+</div>
+
+<div class="board" style="margin-top:44px">
+  <div class="bt">Mang gì vào buổi thử — đây không phải màn hình</div>
+  <table class="tbl">
+    <tr><th style="width:20%">Bản</th><th style="width:40%">Câu cần trả lời</th><th style="width:40%">Dấu hiệu bản này hỏng</th></tr>
+    <tr><td><b>A</b> · Có link dẫn chứng</td><td>Learner có chịu bấm link đi kiểm không?</td><td>Đọc lướt rồi tin luôn; hoặc gặp ý "không có trong bài" thì bỏ qua</td></tr>
+    <tr><td><b>B</b> · Tự nói chưa chắc</td><td>Nhãn "chưa chắc" có được tin, và giấu tên có đủ để chịu gửi không?</td><td>Bỏ qua nhãn vì lần nào cũng thấy; hoặc bấm "Thôi" rồi đi tiếp</td></tr>
+    <tr><td><b>C</b> · Coach đã duyệt</td><td>Nhãn người thật đã duyệt có thay được việc tự đi hỏi không?</td><td>Thấy tự mở là phiền; hoặc gặp câu lạ thì kho không giúp được</td></tr>
+  </table>
+</div>
+
+<div class="legend">Bản nháp lo-fi bấm được — chữ viết tay và khối xám là cố ý. Xem cấu trúc và luồng trước; màu sắc, chữ nghĩa, giao diện bàn sau.</div>
+
+<script>
+// chỗ bấm được cũng phải bấm được bằng bàn phím (Tab + Enter)
+document.querySelectorAll('.hot,.bnut').forEach(function(el){
+  el.setAttribute('role','button');
+  el.setAttribute('tabindex','0');
+  el.addEventListener('keydown', function(ev){
+    if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); el.click(); }
+  });
+});
+
+document.querySelectorAll('.cell[data-flow]').forEach(function(cell){
+  function show(id){
+    cell.querySelectorAll('.st').forEach(function(s){s.classList.toggle('on', s.dataset.st===id);});
+    cell.querySelectorAll('.capbody').forEach(function(c){c.classList.toggle('on', c.dataset.cap===id);});
+    cell.querySelectorAll('.bnut').forEach(function(b){b.classList.toggle('on', b.dataset.go===id);});
+  }
+  cell.addEventListener('click', function(e){
+    var t = e.target.closest('[data-goto],[data-go]');
+    if(!t) return;
+    show(t.dataset.goto || t.dataset.go);
+  });
+});
+</script>
